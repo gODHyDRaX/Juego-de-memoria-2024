@@ -13,14 +13,7 @@ function repartir_Cartas(){
     })
 }
 
-
-
-
 repartir_Cartas();
 
-let todas_las_cartad = document.querySelectorAll(".carta_trasera");
-    todas_las_cartad.forEach((cada_div)=>{
-        cada_div.addEventListener("click",()=>{
-            cada_div.classList.add("activar")
-        })
-    })
+
+
