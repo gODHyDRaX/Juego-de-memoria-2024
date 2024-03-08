@@ -1,0 +1,24 @@
+#header{
+    padding: 0px 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    border: 1px solid black;
+}
+.nivel{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nivel .num_nivel{
+    padding: 1rem;
+    width: 5rem;
+    background-color: rgb(26, 26, 34);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px ;
+}

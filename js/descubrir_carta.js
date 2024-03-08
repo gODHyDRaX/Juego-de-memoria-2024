@@ -32,15 +32,55 @@ let todas_las_cartad = document.querySelectorAll(".carta_trasera");
 
 
                 if(total_descubiertas==1){
+                    
+                    
 
-                    setTimeout(()=>{
-                    // Iterar sobre cada carta descubierta y quitar la clase "activar"
 
-                        cantidad_descubiertas.forEach((cada_carta_descubierta)=>{
-                            cada_carta_descubierta.classList.remove("activar")
-        
-                        });
-                    },(1000))
+                    function comparar(){
+
+                        let carta_1 = cantidad_descubiertas[0].innerHTML;
+                        let carta_2 = cantidad_descubiertas[1].innerHTML;
+
+                        if(carta_1 == carta_2){
+                            console.log("verdadero")
+                            cantidad_descubiertas.forEach((carta)=>{
+                                
+                                setTimeout(()=>{
+                                    // Iterar sobre cada carta descubierta y quitar la clase "activar"
+    
+                                        cantidad_descubiertas.forEach((cada_carta_descubierta)=>{
+                                            cada_carta_descubierta.classList.remove("activar")
+                                            carta.innerHTML = "";
+                                carta.classList.remove("activar")
+                                
+                                            carta.classList.add("ocultar")
+                                        });
+                                    },(1000))
+                                    
+                            })
+                        
+                            
+                        }else{
+                            console.log("falso")
+                            setTimeout(()=>{
+                                // Iterar sobre cada carta descubierta y quitar la clase "activar"
+
+                                    cantidad_descubiertas.forEach((cada_carta_descubierta)=>{
+                                        cada_carta_descubierta.classList.remove("activar")
+                    
+                                    });
+                                },(1000))
+                        }
+
+                    }
+                    comparar();
+
+
+
+
+
+
+                   
                 }
 
             }

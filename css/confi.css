@@ -7,3 +7,7 @@ html{
     font-size: 10px;
     font-family: monospace;
 }
+#root{
+    display: grid;
+    grid-template-rows: 6rem 1fr 6rem;
+}
