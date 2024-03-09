@@ -56,7 +56,7 @@ let todas_las_cartad = document.querySelectorAll(".carta_trasera");
                                             carta.classList.add("ocultar")
                                         });
                                     },(1000))
-                                    
+                                                
                             })
                         
                             
