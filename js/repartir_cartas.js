@@ -1,6 +1,5 @@
-import { cards1,cards2 } from "./Data_cartas.js"
-
-let todas_las_cartas= cards1.concat(cards2)
+import { lista_random } from "./Data_cartas.js";
+let todas_las_cartas= lista_random;
 
 function repartir_Cartas(){
     let tablero = document.querySelector(".tablero")
@@ -10,8 +9,10 @@ function repartir_Cartas(){
         carta.innerHTML = `<div class="carta_frontal">${cada_Carta}</div>`;
         //agrega un elemento hijo a este div, tiene que ser un createElement
         tablero.appendChild(carta)
+        
     })
 }
+console.log(todas_las_cartas);
 
 repartir_Cartas();
 

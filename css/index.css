@@ -52,7 +52,6 @@
     transform: rotateY(-180deg);
 }
 .lista{
-    background-color: rebeccapurple;
     grid-column-start: 2;
     grid-row-start: 2;
     display: flex;

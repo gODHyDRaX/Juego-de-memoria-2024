@@ -5,6 +5,7 @@
 let todas_las_cartad = document.querySelectorAll(".carta_trasera");
 let cartas_Descubiertas = 0;
 let tablero = document.querySelector(".tablero")
+import { Actualizar_vidas } from "./Actualizar_vidas.js";
 
 
 // Iterar sobre cada carta trasera
@@ -72,8 +73,10 @@ let tablero = document.querySelector(".tablero")
                             }
                         }else{
                             console.log("falso")
+                            
                             console.log(cartas_Descubiertas);
                             setTimeout(()=>{
+                                Actualizar_vidas(false);
                                 // Iterar sobre cada carta descubierta y quitar la clase "activar"
                                     cantidad_descubiertas.forEach((cada_carta_descubierta)=>{
                                         cada_carta_descubierta.classList.remove("activar")

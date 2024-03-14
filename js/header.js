@@ -5,6 +5,7 @@ header.innerHTML = `
         Nivel
         <div class="num_nivel">1</div>
     </div>    
+    <div class="vidas"></div>
     <div class="tiempo">
         <span class="material-symbols-outlined">
             timer
