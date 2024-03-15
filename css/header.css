@@ -1,13 +1,15 @@
 #header{
-    padding: 0px 5rem;
-    display: flex;
+    padding-inline-start: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     font-size: 2.5rem;
     border: 1px solid black;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 8;
-    justify-content:space-between;
+    
+    
 }
 .nivel{
     display: flex;
@@ -25,9 +27,20 @@
     justify-content: center;
     border-radius: 3px ;
 }
+.tiempo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    grid-column-start: 5;
+}
 .vidas{
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 4rem;
+    font-size: 3rem ;
+    grid-column-start: 3;
+}
+.puntos{
+    display: flex;
+    align-items: center;
 }

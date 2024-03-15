@@ -6,6 +6,8 @@ let todas_las_cartad = document.querySelectorAll(".carta_trasera");
 let cartas_Descubiertas = 0;
 let tablero = document.querySelector(".tablero")
 import { Actualizar_vidas } from "./Actualizar_vidas.js";
+import { vidas } from "./Actualizar_vidas.js";
+import { Cargar_puntos } from "./puntos.js";
 
 
 // Iterar sobre cada carta trasera
@@ -33,15 +35,8 @@ import { Actualizar_vidas } from "./Actualizar_vidas.js";
 
                 cada_div.classList.add("activar")
                 cantidad_descubiertas = document.querySelectorAll(".activar")
-                
-
                     // Si hay exactamente 1 carta descubierta, programar un temporizador para ocultar las cartas después de 1 segundo
-
-
                 if(total_descubiertas==1){
-                    
-                    
-
                     function comparar(){
 
                         let carta_1 = cantidad_descubiertas[0].textContent;
@@ -50,6 +45,9 @@ import { Actualizar_vidas } from "./Actualizar_vidas.js";
                         if(carta_1 == carta_2){
                             console.log("verdadero")
                             cartas_Descubiertas++;
+                            if (cartas_Descubiertas==todas_las_cartad.length/2) {
+                                Cargar_puntos(vidas.length)
+                            }
                             cantidad_descubiertas.forEach((carta)=>{
                                 setTimeout(()=>{
                                     // Iterar sobre cada carta descubierta y quitar la clase "activar"
@@ -60,8 +58,8 @@ import { Actualizar_vidas } from "./Actualizar_vidas.js";
                                             carta.classList.remove("activar")
                                             carta.classList.add("ocultar")
                                             let listas_descubiertas =[];
-                                            let lista = document.querySelector(".lista")
-                                            lista.innerHTML = `1. ${carta_1}`
+                                            let encontradas = documen.querySelector(".encontradas")
+                                            encontradas.innerHTML = `1. ${carta_1}`
                                         });
                                     },(1000))
                                     console.log(cartas_Descubiertas);

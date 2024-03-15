@@ -2,7 +2,6 @@
     width: 50rem;
     height: 30rem;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
     margin: auto; 
     margin-top: 10rem;
     display: grid;
@@ -52,15 +51,26 @@
     transform: rotateY(-180deg);
 }
 .lista{
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 2;
     display: flex;
     padding: 1rem;
     font-size: 1.5rem;
+    display: grid;
+    grid-template-rows: 3rem 1fr;
 }
 .titulo{
     display: flex;
     color: white;
     font-size: 15rem;
     margin-top: 5rem;
+}
+.title{
+    display: flex;
+    font-size: 2rem;
+    border-bottom: 1px solid #545074;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }

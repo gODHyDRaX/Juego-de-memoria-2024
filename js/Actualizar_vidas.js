@@ -1,8 +1,8 @@
-let vidas = ["❤️","❤️","❤️","❤️","❤️"]
+export let vidas = ["❤️","❤️","❤️","❤️","❤️","❤️"]
 let div_vidas = document.querySelector(".vidas")
 
 
-function Actualizar_vidas(resultado){
+export function Actualizar_vidas(resultado){
     div_vidas.innerHTML ="";
 
     if(resultado){
@@ -22,4 +22,3 @@ vidas.forEach((cada_vida)=>{
 )}
 }
 Actualizar_vidas(true)
-export{Actualizar_vidas}
