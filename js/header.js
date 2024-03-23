@@ -4,7 +4,7 @@ header.innerHTML = `
     <div class="nivel">
         Nivel
         <div class="num_nivel">1</div>
-        <div class="puntos"></div>
+        <div class="puntos">🪙 0</div>
     </div>    
     
     <div class="vidas"></div>
@@ -12,9 +12,7 @@ header.innerHTML = `
         <span class="material-symbols-outlined">
             timer
             </span>
-            <span>00:20</span>
+            <span class="cronometro">00:00</span>
 
     </div>
 `;
-let title = document.querySelector(".title")
-title.innerHTML = `🏆 Encontradas`;
